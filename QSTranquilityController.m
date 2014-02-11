@@ -109,7 +109,8 @@ pascal OSStatus AppEventHandler( EventHandlerCallRef inCallRef, EventRef inEvent
     originalBrightness = [self getDisplayBrightness];
     
     BOOL uiElement = [[[NSBundle mainBundle] objectForInfoDictionaryKey:@"LSUIElement"] boolValue];
-    if (uiElement) {
+    BOOL menuIcon = [[NSUserDefaults standardUserDefaults] boolForKey:@"menuIcon"];
+    if (uiElement && menuIcon) {
         statusItem = [[NSStatusBar systemStatusBar] statusItemWithLength:22];
         [statusItem setMenu:statusMenu];
         [statusItem setHighlightMode:YES];
@@ -685,7 +686,7 @@ pascal OSStatus AppEventHandler( EventHandlerCallRef inCallRef, EventRef inEvent
     rect = NSMakeRect(0,NSMaxY(rect)-22,NSWidth(rect),22);
     
     menuWindow = [[NSWindow alloc]initWithContentRect:rect styleMask:NSBorderlessWindowMask backing:NSBackingStoreBuffered defer:NO];
-    [menuWindow setBackgroundColor: [NSColor redColor]];
+    [menuWindow setBackgroundColor: [NSColor blackColor]];
     [menuWindow setOpaque:NO];
     [menuWindow setAlphaValue:0.9];
     [menuWindow setCanHide:NO];

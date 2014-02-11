@@ -23,7 +23,6 @@
 		ED9CDD0A18A239F000369472 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED9CDD0918A239F000369472 /* Images.xcassets */; };
 		ED9CDD0D18A239FE00369472 /* TranquilityMenu.png in Resources */ = {isa = PBXBuildFile; fileRef = ED9CDD0B18A239FE00369472 /* TranquilityMenu.png */; };
 		ED9CDD0E18A239FE00369472 /* TranquilityMenuPressed.png in Resources */ = {isa = PBXBuildFile; fileRef = ED9CDD0C18A239FE00369472 /* TranquilityMenuPressed.png */; };
-		EDE22D1D18A363A1008889E7 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDE22D1C18A363A1008889E7 /* Sparkle.framework */; };
 		EDE22D1E18A363BF008889E7 /* Sparkle.framework in Resources */ = {isa = PBXBuildFile; fileRef = EDE22D1C18A363A1008889E7 /* Sparkle.framework */; };
 /* End PBXBuildFile section */
 
@@ -65,7 +64,6 @@
 				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
 				7F0FB4EC0BF7650A007329FE /* IOKit.framework in Frameworks */,
 				7F87C58F106EFFF000962DC4 /* Carbon.framework in Frameworks */,
-				EDE22D1D18A363A1008889E7 /* Sparkle.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

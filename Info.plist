@@ -30,6 +30,8 @@
 	<string>http://www.pixio.com/tranquilitycast.xml</string>
 	<key>NSUserDefaults</key>
 	<dict>
+		<key>menuIcon</key>
+		<false/>
 		<key>adjustBrightness</key>
 		<false/>
 		<key>blackColor</key>
